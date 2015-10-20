@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<!-- Title here -->
+		<title>Metro Mania</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="Metro%20Mania_files/bootstrap.css" rel="stylesheet">
+		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+		<link rel="stylesheet" href="Metro%20Mania_files/settings.css" media="screen">
+		<!-- Pretty Photo CSS -->
+		<link href="Metro%20Mania_files/prettyPhoto.css" rel="stylesheet">
+		<!-- Parallax slider -->
+		<link rel="stylesheet" href="Metro%20Mania_files/slider.css">
+		<!-- Flexslider -->
+		<link rel="stylesheet" href="Metro%20Mania_files/flexslider.css">
+		<!-- Font awesome CSS -->
+		<link href="Metro%20Mania_files/font-awesome.css" rel="stylesheet">		
+		<!-- Custom CSS -->
+		<link href="Metro%20Mania_files/style.css" rel="stylesheet">
+		<!-- Colors - Orange, Purple, Light Blue (lblue), Red, Green and Blue -->
+		<link href="Metro%20Mania_files/lblue.css" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="http://ashobiz.asia/metromania47/lblue/img/favicon/favicon.png">
+	<style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+style.firebugResetStyles {
+    display: none !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style></head>
+	
+	<body>
+
+		<!-- Header Starts -->
+		<header>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-md-4 col-sm-4">
+				<div class="logo">
+				  <h1><a href="#">Metro <span class="color">Mania</span></a></h1>
+				  <div class="hmeta">Responsive Metro Styled Theme</div>
+				</div>
+			  </div>
+			  <div class="col-md-5 col-md-offset-3 col-sm-6 col-sm-offset-2">
+				
+					<form class="form-inline" role="form">
+					  <div class="form-group">
+						<input class="form-control" id="search" placeholder="Type Something..." type="text">
+					  </div>
+					  <button type="submit" class="btn btn-default">Search</button>
+					</form>
+				
+			  </div>
+			</div>
+		  </div>
+		</header>
+
+		<!-- Navigation bar starts -->
+
+		<div class="navbar bs-docs-nav" role="banner">
+		  <div class="container">
+		   <div class="navbar-header">
+			 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+				 <span class="sr-only">Toggle navigation</span>
+				 <span class="icon-bar"></span>
+				 <span class="icon-bar"></span>
+				 <span class="icon-bar"></span>
+			 </button>
+		   </div>
+		   
+			  <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav">
+					  <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                         <ul class="dropdown-menu">
+                           <li><a href="http://ashobiz.asia/metromania47/lblue/index.html">Revolution Slider</a></li>
+                           <li><a href="http://ashobiz.asia/metromania47/lblue/index1.html">Flex Slider</a></li>
+                           <li><a href="http://ashobiz.asia/metromania47/lblue/index2.html">Parallax Slider</a></li>
+                         </ul>
+                      </li> 
+				  <!-- Refer Bootstrap navbar doc -->
+				  <li class="dropdown">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages #1 <b class="caret"></b></a>
+					 <ul class="dropdown-menu">
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/landing-page.html">Landing Page</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/pricing.html">Pricing Table</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/service-3.html">Service</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/support.html">Support</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/sitemap.html">Sitemap</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/timeline.html">Timeline</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/404.html">404</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/faq.html">FAQ</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/register1.html">Register</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/login1.html">Login</a></li>
+					 </ul>
+				  </li>                   
+				  <li class="dropdown">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages #2<b class="caret"></b></a>
+					 <ul class="dropdown-menu">
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/coming-soon.html">Coming Soon</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/features-4.html">Features</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/statement.html">Statement</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/tasks.html">Tasks</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/resume.html">Resume</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/projects.html">Projects</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/make-post.html">Make Post</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/events.html">Events</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/error-log.html">Error Log</a></li>
+					 </ul>
+				  </li>
+				  <li><a href="http://ashobiz.asia/metromania47/lblue/service.html">Service</a></li>
+				  <li><a href="http://ashobiz.asia/metromania47/lblue/aboutus.html">About Us</a></li>
+				  <li class="dropdown">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+					 <ul class="dropdown-menu">
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/blog-2.html">Blog #1</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/blog-4.html">Blog #1</a></li>
+					   <li><a href="http://ashobiz.asia/metromania47/lblue/blog-single.html">Blog Single</a></li>
+					 </ul>
+				   </li>
+									   
+				  <li><a href="http://ashobiz.asia/metromania47/lblue/portfolio.html">Portfolio</a></li>
+				  <li><a href="http://ashobiz.asia/metromania47/lblue/contactus.html">Contact</a></li>
+				</ul>
+			  </nav>
+			 </div>
+		  </div>
+
+		<!-- Navigation bar ends -->
+
+		<div class="content">
+			<div class="container">
+				<!-- Slider Starts -->
+				<div style="overflow: visible;" class="tp-banner-container">
+					<div id="revslider-279" style="max-height: 500px; height: 388px;" class="tp-banner revslider-initialised tp-simpleresponsive">
+						<ul class="tp-revslider-mainul" style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">	<!-- SLIDE  -->
+							<li style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1;" class="tp-revslider-slidesli active-revslide current-sr-slide-visible" data-transition="slidevertical" data-slotamount="4" data-masterspeed="800">
+								<!-- MAIN IMAGE -->
+								<div class="slotholder" style="width:100%;height:100%;" data-duration="2000" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="undefined" data-kenburns="undefined" data-easeme="undefined" data-bgfit="undefined" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazydone="undefined" src="img/slider/transparent.png" data-src="img/slider/transparent.png" style="background-color: rgb(27, 161, 226); background-repeat: no-repeat; background-image: url(&quot;img/slider/transparent.png&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit;"></div></div>
+								<!-- LAYERS -->
+								<!-- LAYERS NR. 1 // -->
+								<div style="min-height: 0px; min-width: 0px; line-height: 54px; border-width: 0px; margin: 2.325px 0px; padding: 0px 16px; letter-spacing: 0px; font-size: 39px; left: 533.25px; top: 85.25px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px); transition: none 0s ease 0s ;" class="tp-caption lfr largegreenbg b-red start" data-x="right" data-hoffset="-130" data-y="110" data-speed="1500" data-start="1200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Linear.easeNone" data-captionhidden="off">Color Perfecter
+								</div>	
+								<!-- LAYERS NR. 2 -->
+								<div style="min-height: 0px; min-width: 0px; line-height: 23px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px; left: 492.25px; top: 162.75px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px); transition: none 0s ease 0s ;" class="tp-caption skewfromright medium_text text-right start" data-x="right" data-hoffset="-130" data-y="210" data-speed="800" data-start="1800" data-easing="Power4.easeOut" data-endspeed="400" data-endeasing="Power4.easeOut" data-captionhidden="off">At vero eos et accusamus et iustoodio dignis<br>simos ducimus qui blanditiis praes<br>entium deleniti atque corrupti.
+								</div>
+								<!-- LAYERS NR. 3 // Slide Button -->
+								<div style="min-height: 0px; min-width: 0px; line-height: 19px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 12px; left: 734.25px; top: 248px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px); transition: none 0s ease 0s ;" class="tp-caption sfb start" data-x="right" data-hoffset="-130" data-y="320" data-speed="1500" data-start="2600" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Linear.easeNone" data-captionhidden="off"><a href="#" class="btn btn-default black">Know More</a>
+								</div>
+								<!-- LAYERS NR. 4 // Logo Image -->
+								<div class="tp-caption lfl start" data-x="140" data-y="110" data-speed="600" data-start="4400" data-easing="Power4.easeOut" data-endspeed="400" data-endeasing="Power4.easeOut" data-captionhidden="off" style="z-index: 6; left: 108.5px; top: 85.25px; visibility: visible; opacity: 0.148618; transform: translate3d(-84.4571px, 0px, 0px);"><img style="width: 113.15px; height: 232.5px;" src="Metro%20Mania_files/s11.png" class="img-responsive" alt="">
+								</div>
+								<!-- LAYERS NR. 5 // Logo Image -->
+								<div class="tp-caption lfl start" data-x="200" data-y="240" data-speed="600" data-start="3600" data-easing="Power4.easeOut" data-endspeed="400" data-endeasing="Power4.easeOut" data-captionhidden="off" style="z-index: 5; left: 155px; top: 186px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px);"><img style="width: 236.375px; height: 131.75px;" src="Metro%20Mania_files/s12.png" class="img-responsive" alt="">
+								</div>
+							</li>
+								<!-- SLIDE  -->
+							<li style="width: 100%; height: 100%; overflow: hidden; visibility: hidden; opacity: 0; z-index: 18;" class="tp-revslider-slidesli active-revslide" data-transition="slidevertical" data-slotamount="4" data-masterspeed="800">
+								<!-- MAIN IMAGE -->
+								<div class="slotholder" style="width:100%;height:100%;" data-duration="2000" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="undefined" data-kenburns="undefined" data-easeme="undefined" data-bgfit="undefined" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-lazydone="undefined" src="img/slider/transparent.png" data-src="img/slider/transparent.png" style="background-color: rgb(254, 120, 30); background-repeat: no-repeat; background-image: url(&quot;img/slider/transparent.png&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; visibility: hidden; opacity: 0;"></div></div>
+							
+								<!-- LAYER NR. 1 -->
+								<div class="tp-caption large_bold_white skewfromrightshort customout start" data-x="100" data-y="126" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="800" data-start="1200" data-easing="Back.easeOut" data-endspeed="500" data-endeasing="Power4.easeIn" data-captionhidden="on" style="z-index: 4; min-height: 0px; min-width: 0px; line-height: 47px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 45px; left: 77.5px; top: 97.65px; visibility: visible; opacity: 0; transform: translate3d(0px, 0px, 0px) scale(0.75, 0.75); transform-origin: 50% 50% 0px;">Start
+								</div>
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption medium_light_white skewfromleftshort customout start" data-x="245" data-y="140" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="800" data-start="1300" data-easing="Back.easeOut" data-endspeed="500" data-endeasing="Power4.easeIn" data-captionhidden="on" style="z-index: 5; min-height: 0px; min-width: 0px; line-height: 28px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 23px; left: 189.875px; top: 108.5px; visibility: visible; opacity: 0; transform: translate3d(0px, 0px, 0px) scale(0.75, 0.75); transform-origin: 50% 50% 0px;">with
+								</div>
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption medium_light_white skewfromrightshort customout start" data-x="110" data-y="195" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="600" data-start="1400" data-easing="Back.easeOut" data-endspeed="500" data-endeasing="Power4.easeIn" data-captionhidden="on" style="z-index: 6; min-height: 0px; min-width: 0px; line-height: 28px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 23px; left: 85.25px; top: 151.125px; visibility: visible; opacity: 0; transform: translate3d(0px, 0px, 0px) scale(0.75, 0.75); transform-origin: 50% 50% 0px;">Our
+								</div>
+								<!-- LAYER NR. 4 -->
+								<div class="tp-caption large_bold_white skewfromleftshort customout start" data-x="165" data-y="182" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="600" data-start="1500" data-easing="Back.easeOut" data-endspeed="500" data-endeasing="Power4.easeIn" data-captionhidden="on" style="z-index: 7; min-height: 0px; min-width: 0px; line-height: 47px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 45px; left: 127.875px; top: 141.05px; visibility: visible; opacity: 0; transform: translate3d(0px, 0px, 0px) scale(0.75, 0.75); transform-origin: 50% 50% 0px;">Developers
+								</div>
+								<!-- LAYER NR. 5 -->
+								<div class="tp-caption medium_text customin customout start" data-x="100" data-y="260" data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="2000" data-easing="Power4.easeOut" data-endspeed="500" data-endeasing="Power4.easeIn" data-captionhidden="on" style="z-index: 9; min-height: 0px; min-width: 0px; line-height: 23px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px; left: 77.5px; top: 201.5px; visibility: visible; opacity: 0; transform: translate3d(0px, 0px, 0px) scale(0.75, 0.75); transform-origin: 50% 50% 0px;">Lorem ipsum dolor sit amet, consectetur adipi<br>sicing elit, sed do eiusmod tempor incidi<br>aliqua Ut enim ad minim veniam!
+								</div>
+								<!-- LAYERS NR. 7 -->
+								<div class="tp-caption lfr start" data-x="right" data-hoffset="-150" data-y="100" data-speed="800" data-start="3200" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Linear.easeNone" data-captionhidden="off" style="z-index: 12; left: 515.75px; top: 77.5px; visibility: visible; opacity: 0; transform: translate3d(732.375px, 0px, 0px);"><img style="width: 297.6px; height: 232.5px;" src="Metro%20Mania_files/s21.png" class="img-responsive" alt="">
+								</div>
+								<!-- LAYERS NR. 8 -->
+								<div class="tp-caption lfr start" data-x="right" data-hoffset="-110" data-y="215" data-speed="800" data-start="3800" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Linear.easeNone" data-captionhidden="off" style="z-index: 13; left: 738.75px; top: 166.625px; visibility: visible; opacity: 0; transform: translate3d(732.375px, 0px, 0px);"><img style="width: 106.175px; height: 139.5px;" src="Metro%20Mania_files/s23.png" class="img-responsive" alt="">
+								</div>
+								<!-- LAYERS NR. 9 -->
+								<div class="tp-caption lfr start" data-x="right" data-hoffset="-500" data-y="260" data-speed="800" data-start="4400" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Linear.easeNone" data-captionhidden="off" style="z-index: 14; left: 490.5px; top: 201.5px; visibility: visible; opacity: 0; transform: translate3d(732.375px, 0px, 0px);"><img style="width: 51.925px; height: 103.075px;" src="Metro%20Mania_files/s24.png" class="img-responsive" alt="">
+								</div>
+							</li>
+						</ul>
+					<div style="display: none;" class="tp-loader spinner0"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="tp-bannertimer" style="visibility: visible; width: 37.9889%; transform: translate3d(0px, 0px, 0px);"></div></div>
+				<div style="position: absolute; top: 194px; margin-top: -20px; left: 20px;" class="tp-leftarrow tparrows default round hidearrows"><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div style="visibility: inherit; opacity: 1; background-image: url(&quot;img/slider/transparent.png&quot;);" class="tp-arr-imgholder"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div><div style="position: absolute; top: 194px; margin-top: -20px; right: 20px;" class="tp-rightarrow tparrows default round hidearrows"><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div style="visibility: inherit; opacity: 1; background-image: url(&quot;img/slider/transparent.png&quot;);" class="tp-arr-imgholder"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div></div>
+				<!-- Slider Ends -->
+
+				<!-- Hero Unit -->
+				<div class="row">
+				  <div class="col-md-12">
+					<h2>Welcome to Metro Mania</h2>
+					<p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet 
+fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat 
+hendrerit. Vivamus vel ultricies elit. Nulla vitae cursus leo. Praesent 
+eleifend sodales felis, in congue purus scelerisque eget.</p>
+					<hr>
+				  </div>  
+				</div>
+				<!-- Hero Ends -->  
+
+				<div class="row">
+				  <div class="col-md-12">
+
+					<!-- Image blocks starts -->
+
+					<ul class="hover-block">
+
+					  <li>
+
+						<a href="#">
+						  <!-- Image -->
+						  <img class="img-responsive" src="Metro%20Mania_files/3.jpg" alt=""> 
+						  <!-- Content with background color Class -->
+						  <div class="hover-content b-orange">
+							<h6>Beautiful Girl</h6>
+							Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit. 
+						  </div>
+						</a>
+
+					  </li>
+
+
+					  <li>
+
+						<a href="#">
+						  <img class="img-responsive" src="Metro%20Mania_files/4.jpg" alt=""> 
+						  <div style="top: 155px;" class="hover-content b-red">
+							<h6>Suspendisse Girl</h6>
+							Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit. 
+						  </div>
+						</a>
+
+					  </li>
+
+
+					  <li>
+
+						<a href="#">
+						  <img class="img-responsive" src="Metro%20Mania_files/5.jpg" alt=""> 
+						  <div class="hover-content b-purple">
+							<h6>Morbi Girl</h6>
+							Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit. 
+						  </div>
+						</a>
+
+					  </li>
+
+
+					  <li>
+
+						<a href="#">
+						  <img class="img-responsive" src="Metro%20Mania_files/6.jpg" alt=""> 
+						  <div class="hover-content b-lblue">
+							<h6>Aenean Girl</h6>
+							Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit. 
+						  </div>
+						</a>
+
+					  </li>            
+
+					</ul>
+
+					<div class="clearfix"></div>
+
+					<!-- Image blocks ends -->
+				  </div>
+				</div>
+				<br><hr>
+				<!-- Discover starts -->
+				<div class="discover">
+					<div class="row">
+					  <div class="col-md-12">
+						<h3>Discover</h3>
+						<div class="big grey">Check out some of our Cool Products.</div>
+						  <div class="dis-nav button">
+							<a href="#" id="one">Linux 8</a> 
+							<a href="#" id="two">Linux 7</a> 
+							<a href="#" id="three">Linux Phone</a> 
+							<a href="#" id="four">MS Office</a> 
+							<a href="#" id="five">PlayStation</a> 
+							<a href="#" id="six">GTalk</a>
+						  </div>
+
+						  <div class="dis-content">
+							<div class="one">
+								<h3>Linux 8</h3>
+								<p>Linux 8. Suspendisse potenti. Morbi ac felis nec mauris 
+imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus
+ erat hendrerit. Vivamus vel ultricies elit. Aliquam ut feugiat ante. 
+Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+								<a href="#" class="btn btn-warning"><i class="fa fa-shopping-cart"></i> Buy Now</a> <a href="#" class="btn btn-success">Try Now</a>
+							</div>
+							<div class="two">
+								<h3>Linux 7</h3>
+								<p>Linux 7. Suspendisse potenti. Morbi ac felis nec mauris 
+imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus
+ erat hendrerit. Vivamus vel ultricies elit. Aliquam ut feugiat ante. 
+Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+								<a href="#" class="btn btn-warning"><i class="fa fa-shopping-cart"></i> Buy Now</a> <a href="#" class="btn btn-success">Try Now</a>
+							</div>
+							<div class="three">
+							   <h3>Linux Phone</h3>
+								<p>Linux Phone. Suspendisse potenti. Morbi ac felis nec mauris 
+imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus
+ erat hendrerit. Vivamus vel ultricies elit. Aliquam ut feugiat ante. 
+Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+								<a href="#" class="btn btn-warning"><i class="fa fa-shopping-cart"></i> Buy Now</a> <a href="#" class="btn btn-success">Try Now</a>              
+							</div>
+							<div class="four">
+							   <h3>MS Office</h3>
+								<p>MS Office. Suspendisse potenti. Morbi ac felis nec mauris 
+imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus
+ erat hendrerit. Vivamus vel ultricies elit. Aliquam ut feugiat ante. 
+Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+								<a href="#" class="btn btn-warning"><i class="fa fa-shopping-cart"></i> Buy Now</a> <a href="#" class="btn btn-success">Try Now</a>              
+							</div>
+							<div class="five">
+							   <h3>PlayStation</h3>
+								<p>PlayStation. Suspendisse potenti. Morbi ac felis nec mauris 
+imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus
+ erat hendrerit. Vivamus vel ultricies elit. Aliquam ut feugiat ante. 
+Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+								<a href="#" class="btn btn-warning"><i class="fa fa-shopping-cart"></i> Buy Now</a> <a href="#" class="btn btn-success">Try Now</a>              
+							</div>
+							<div class="six">
+							   <h3>GTalk</h3>
+								<p>GTalk. Suspendisse potenti. Morbi ac felis nec mauris 
+imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus
+ erat hendrerit. Vivamus vel ultricies elit. Aliquam ut feugiat ante. 
+Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+								<a href="#" class="btn btn-warning"><i class="fa fa-shopping-cart"></i> Buy Now</a> <a href="#" class="btn btn-success">Try Now</a>              
+							</div>
+						  </div>
+					  </div>
+					</div>
+				</div>
+				<!-- Disconver ends --> 
+
+				<hr>
+
+				<!-- Services starts -->	
+				<div class="services">
+					<div class="row">
+
+					  <div class="col-md-12">
+						<h3>Services</h3>
+					  </div>
+
+					  <div class="col-md-6">
+						<div class="col-l">
+						  <div class="service">
+							<div class="b-orange serv-block">
+							  <i class="fa fa-cloud"></i>
+							  <h3>Linux 8</h3>
+							</div>
+							<p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean lacus hendrerit.</p>
+							<a href="#">Take a look </a><i class="fa fa-angle-double-right"></i> 
+						  </div>
+						</div>
+						<div class="col-r">
+						  <div class="service">      
+							<div class="b-purple serv-block">
+							  <i class="fa fa-briefcase"></i>
+							  <h3>Google</h3>
+							</div>     
+							<p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean lacus hendrerit.</p>
+							<a href="#">Take a look </a><i class="fa fa-angle-double-right"></i>
+						  </div>
+						</div>
+						<div class="clearfix"></div>
+					  </div>
+					  <div class="col-md-6">
+						<div class="col-l">
+						  <div class="service">
+							<div class="b-green serv-block">
+							  <i class="fa fa-camera"></i>
+							  <h3>PlayStation</h3>
+							</div>
+							<p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean lacus hendrerit.</p>
+							<a href="#">Take a look </a><i class="fa fa-angle-double-right"></i>
+						  </div>
+						</div>
+						<div class="col-r">
+						  <div class="service"> 
+							<div class="b-blue serv-block">
+							  <i class="fa fa-home"></i>
+							  <h3>GTalk</h3>
+							</div>        
+							<p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean lacus hendrerit.</p>
+							<a href="#">Take a look </a><i class="fa fa-angle-double-right"></i>
+						  </div>
+						</div>
+						<div class="clearfix"></div>
+					  </div>
+
+
+					</div>
+				</div>
+				<!-- Services Ends -->
+				<hr>
+				
+				<!-- Testimonial starts -->
+				<div class="testimonial">
+				  <div class="row">
+					<div class="col-md-6">
+					  <blockquote>
+						<p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet 
+fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat 
+hendrerit. Vivamus vel ultricies elit. Nulla vitae cursus leo. </p>
+						<small>Ashok, <span class="color">Google</span></small>
+					  </blockquote>
+					</div>
+					<div class="col-md-6">
+					  <blockquote>
+						<p>Aenean sodales augue ac lacus hendrerit sed rhoncus erat 
+hendrerit. Vivamus vel ultricies elit. Nulla vitae cursus leo. Praesent 
+eleifend sodales felis, in congue purus scelerisque eget.</p>
+						<small>Ravi, <span class="color">Canonical</span></small>
+					  </blockquote>
+					</div>
+				  </div>
+				</div>
+				<!-- Testimonial ends -->
+				<hr>
+				<!-- Features starts -->
+				<div class="features-four">
+
+				  <h3>Features</h3>
+				  <p>Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Vivamus vel ultricies elit.</p>
+
+				  <br>
+
+				  <div class="row">
+
+					<div class="col-md-4">
+					  <div class="f-block b-red">
+						<a href="#"><i class="fa fa-briefcase"></i></a>
+						<a href="#"><h4>Vivamus vel ultricies eultrlit</h4></a>
+						<p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Vivamus vel ultricies elit.</p>
+					  </div>
+					</div>
+
+					<div class="col-md-4">
+					  <div class="f-block b-purple">
+						<a href="#"><i class="fa fa-music"></i></a>
+						<a href="#"><h4>Morbi Acfelis Ecmauris</h4></a>
+						<p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Vivamus vel ultricies elit.</p>
+					  </div>
+					</div>
+
+					<div class="col-md-4">
+					  <div class="f-block b-lblue">
+						<a href="#"><i class="fa fa-camera"></i></a>
+						<a href="#"><h4>Suspendisse Potenti Spahe</h4></a>
+						<p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Vivamus vel ultricies elit.</p>
+					  </div>
+					</div>        
+
+				  </div>
+				</div>
+				<!-- Features ends -->
+				
+				<div class="border"></div>
+
+				<!-- Product & links starts -->
+				<div class="prod">
+					<div class="row">
+					  <div class="col-md-4">
+						<div class="home-links">
+						  <div class="col-l">
+							<h5>Downloads</h5>
+							<ul>
+							  <li><a href="#">Linux 8</a></li>
+							  <li><a href="#">PlayStation</a></li>
+							  <li><a href="#">GTalk</a></li>
+							  <li><a href="#">Google Search</a></li>
+							  <li><a href="#">Linux Phone</a></li>
+							</ul>
+						  </div>
+						  <div class="col-r">
+							<h5>Support</h5>
+							<ul>
+							  <li><a href="#">Linux Update</a></li>
+							  <li><a href="#">PlayStation</a></li>
+							  <li><a href="#">GTalk</a></li>
+							  <li><a href="#">Google Search</a></li>
+							  <li><a href="#">Linux Phone</a></li>
+							</ul>
+						  </div>
+						  <div class="clearfix"></div>
+						</div>
+					  </div>
+					  <div class="col-md-8"> 
+						<div class="home-product">
+						  <div style="position: relative;" class="home-prod-img" id="s1">
+							  <img style="position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 1; width: 148px; height: 148px;" src="Metro%20Mania_files/s1.jpg" class="img-responsive" alt="">
+							  <img style="position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0; width: 148px; height: 148px;" src="Metro%20Mania_files/s2.jpg" class="img-responsive" alt="">
+							  <img style="position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0; width: 148px; height: 148px;" src="Metro%20Mania_files/s3.jpg" class="img-responsive" alt="">
+						  </div>
+						  <h3>Canonical Linux 8</h3>
+						  <p>Aliquam ut feugiat ante. Curabitur justo aliquam. Maecenas 
+turpis urna, eleifend et venenatis eget, ultricies quis urna. Aliquam ut
+ feugiat ante. Curabitur justo aliquam. Aliquam ut feugiat ante. 
+Curabitur justo aliquam. </p>
+						  <div class="clearfix"></div>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<!-- Product & links ends --> 
+
+			</div>
+		</div> <!--/ Content End -->
+
+		<!-- Social -->
+
+		<div class="social-links">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				<p class="big"><span>Follow Us On</span> <a href="#"><i class="fa fa-facebook"></i>Facebook</a> <a href="#"><i class="fa fa-twitter"></i>Twitter</a> <a href="#"><i class="fa fa-google-plus"></i>Google Plus</a> <a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></p>
+			  </div>
+			</div>    
+		  </div>
+		</div>
+
+
+		<!-- Footer -->
+		<footer>
+		  <div class="container">
+			<div class="row">
+
+			  <div class="widgets">
+				<div class="col-md-4">
+				  <div class="fwidget">
+
+					<div class="col-l">
+					  <h6>Downlaods</h6>
+					  <ul>
+						<li><a href="#">Condimentum</a></li>
+						<li><a href="#">Etiam at</a></li>
+						<li><a href="#">Fusce vel</a></li>
+						<li><a href="#">Vivamus</a></li>
+						<li><a href="#">Pellentesque</a></li>
+					  </ul>
+					</div>
+
+					<div class="col-r">
+					  <h6>Support</h6>
+					  <ul>
+						<li><a href="#">Condimentum</a></li>
+						<li><a href="#">Etiam at</a></li>
+						<li><a href="#">Fusce vel</a></li>
+						<li><a href="#">Vivamus</a></li>
+						<li><a href="#">Pellentesque</a></li>
+					  </ul>
+					</div>
+
+				  </div>
+				</div>
+
+				<div class="col-md-4">
+				  <div class="fwidget">
+					<h6>Categories</h6>
+					<ul>
+					  <li><a href="#">Condimentum - Condimentum gravida</a></li>
+					  <li><a href="#">Etiam at - Condimentum gravida</a></li>
+					  <li><a href="#">Fusce vel - Condimentum gravida</a></li>
+					  <li><a href="#">Vivamus - Condimentum gravida</a></li>
+					  <li><a href="#">Pellentesque - Condimentum gravida</a></li>
+					</ul>
+				  </div>
+				</div>
+
+				<div class="col-md-4">
+				  <div class="fwidget">
+					<h6>Recent Posts</h6>
+					<ul>
+					  <li><a href="#">Sed eu leo orci, condimentum gravida metus</a></li>
+					  <li><a href="#">Etiam at nulla ipsum, in rhoncus purus</a></li>
+					  <li><a href="#">Fusce vel magna faucibus felis dapibus facilisis</a></li>
+					  <li><a href="#">Vivamus scelerisque dui in massa</a></li>
+					  <li><a href="#">Pellentesque eget adipiscing dui semper</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="row"> 
+			  <div class="col-md-12">
+				  <div class="copy">
+					<h6>Metro <span class="color">Mania</span></h6>
+					<p>Copyright © <a href="#">Your Site</a> - <a href="http://ashobiz.asia/metromania47/lblue/index.html">Home</a> | <a href="http://ashobiz.asia/metromania47/lblue/aboutus.html">About Us</a> | <a href="http://ashobiz.asia/metromania47/lblue/faq.html">FAQ</a> | <a href="http://ashobiz.asia/metromania47/lblue/contactus.html">Contact Us</a></p>
+				  </div>
+			  </div>
+			</div>
+		  <div class="clearfix"></div>
+		  </div>
+		</footer> 
+				
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="Metro%20Mania_files/jquery_002.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="Metro%20Mania_files/bootstrap.js"></script>
+		<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+		<script src="Metro%20Mania_files/jquery_005.js"></script>
+		<script src="Metro%20Mania_files/jquery_003.js"></script>
+		<!-- Isotope for gallery -->
+		<script src="Metro%20Mania_files/jquery_004.js"></script> 
+		<!-- prettyPhoto for images -->
+		<script src="Metro%20Mania_files/jquery_007.js"></script> 
+		<!-- Parallax slider -->
+		<script src="Metro%20Mania_files/jquery_006.js"></script>
+		<script src="Metro%20Mania_files/modernizr.js"></script>
+		<!-- Filter for support page -->
+		<script src="Metro%20Mania_files/filter.js"></script>
+		<!-- Cycle slider -->
+		<script src="Metro%20Mania_files/cycle.js"></script> 
+		<!-- Flex slider -->
+		<script src="Metro%20Mania_files/jquery.js"></script> 
+		<!-- Easing -->
+		<script src="Metro%20Mania_files/easing.js"></script> 
+		<!-- Respond JS for IE8 -->
+		<script src="Metro%20Mania_files/respond.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="Metro%20Mania_files/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script src="Metro%20Mania_files/custom.js"></script>
+		<script>
+			// Revolution Slider
+			var revapi;
+			jQuery(document).ready(function() {
+				   revapi = jQuery('.tp-banner').revolution(
+					{
+						delay: 9000,
+						startwidth: 1200,
+						startheight: 500,
+						hideThumbs: 200,
+						shadow: 0,
+						navigationType: "none",
+						hideThumbsOnMobile: "on",
+						hideArrowsOnMobile: "on",
+						hideThumbsUnderResoluition: 0,
+						touchenabled: "on",
+						fullWidth: "on"
+					});
+			});	
+		</script>
+		
+</body></html>
