@@ -505,6 +505,9 @@ header form{
 .navbar .nav > li > a:hover{
 	background: #f3f3f3 !important;
 }
+.navbar .nav > li.active{
+	background: #f3f3f3 !important;
+}
 
 .navbar .icon-bar{
    background:#fff;
@@ -1546,6 +1549,11 @@ ul.hover-block li img {
 
 .content ul li{
 	padding: 5px 0px;
+}
+ul.bolds{
+	list-style-type: disc;
+	margin-left: 15px;
+   padding-left:15px;
 }
 
 /* Discover */
