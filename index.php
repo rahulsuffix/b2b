@@ -11,30 +11,44 @@
           <div id="da-slider" class="da-slider">
             <div class="da-slide">
               <div class="da-blue">
-                <h2><span>Get Back in Business!</span></h2>
-                <p>With this mail, we are pleased to introduce you to our Account Reactivation and Management services which can not only help you get your business back on Amazon but which will also ensure that it doesn't get suspended ever again.</p>
-                <a href="#" class="da-link">Read more</a>
+                <h2><span>Account Reactivation</span></h2>
+                <p>
+                
+                  <i class="fa fa-arrow-right"></i>&nbsp;Over 250 Suspended Seller account Reinstated and still counting...<br>
+                  <i class="fa fa-arrow-right"></i>&nbsp;No Advance Payment
+                
+                </p>
+                <a href="service.php#account-reactivation" class="da-link">Read more</a>
                 <div class="da-img"><img src="public/images/business-01.png" alt="image01" /></div>
               </div>
             </div>
             <div class="da-slide">
               <div class="da-green">
-                <h2><span>Lorem ipsum </span></h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum aliquam feugiat. Integer a urna a tellus vehicula elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lacus eu mi consequat posuere non nec urna.</p>
-                <a href="#" class="da-link">Read more</a>
+                <h2><span>Suspension Prevention</span></h2>
+                <p>
+                  <i class="fa fa-arrow-right"></i>&nbsp;Managing more than  100 active accounts<br>
+                  <i class="fa fa-arrow-right"></i>&nbsp;95% of reactive accounts have "Good Health"
+                </p>
+                <a href="service.php#suspension-prevention" class="da-link">Read more</a>
                 <div class="da-img"><img src="public/images/business-02.png" alt="image01" /></div>
               </div>
             </div>
             <div class="da-slide">
-              <h2><span>Lorem ipsum </span></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum aliquam feugiat. Integer a urna a tellus vehicula elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lacus eu mi consequat posuere non nec urna.</p>
-              <a href="#" class="da-link">Read more</a>
+              <h2><span>Listing Cataloguing</span></h2>
+              <p>
+                <i class="fa fa-arrow-right"></i>&nbsp;Experience of listing over 1 lakh items <br>
+                <i class="fa fa-arrow-right"></i>&nbsp;TAT (Turn around) = 2 days
+              </p>
+              <a href="service.php#listing-cataloguing" class="da-link">Read more</a>
               <div class="da-img"><img src="public/images/business-03.png" alt="image01" /></div>
             </div>
             <div class="da-slide">
-              <h2><span>Lorem ipsum</span></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum aliquam feugiat. Integer a urna a tellus vehicula elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lacus eu mi consequat posuere non nec urna.</p>
-              <a href="#" class="da-link">Read more</a>
+              <h2><span>Launch</span></h2>
+              <p>
+                 <i class="fa fa-arrow-right"></i>&nbsp; More than 50 Non Accounts Launched <br>
+                 <i class="fa fa-arrow-right"></i>&nbsp; No Advanced
+              </p>
+              <a href="service.php#launch" class="da-link">Read more</a>
               <div class="da-img"><img src="public/images/business-04.png" alt="image01" /></div>
             </div>
             <nav class="da-arrows">
@@ -61,7 +75,7 @@
 
 <!-- Discover starts -->
 
-  <div class="discover">
+<!--   <div class="discover">
     <div class="row">
       <div class="col-md-12">
         <h3>Listing & Cataloguing</h3>
@@ -109,11 +123,10 @@
           </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 <!-- Disconver ends --> 
 
-<hr />
 
 <!-- Services starts -->
 
@@ -124,8 +137,8 @@
         <h3>Services</h3>
       </div>
 
-      <div class="col-md-6">
-        <div class="col-l">
+      <div class="col-md-4">
+        <div class="">
           <div class="service">
             <div class="b-green serv-block">
               <i class="fa fa-camera"></i>
@@ -135,7 +148,9 @@
             <a href="service.php#account-reactivation">Take a look </a><i class="fa fa-angle-double-right"></i>
           </div>
         </div>
-        <div class="col-r">
+        </div>
+        <div class="col-md-4">
+        <div class="">
           <div class="service">
             <div class="b-orange serv-block">
               <i class="fa fa-cloud"></i>
@@ -146,8 +161,8 @@
           </div>
         </div>
        </div> 
-      <div class="col-md-6">
-        <div class="col-l">
+      <div class="col-md-4">
+        <div class="">
           <div class="service">      
             <div class="b-purple serv-block">
               <i class="fa fa-briefcase"></i>
@@ -157,16 +172,7 @@
             <a href="service.php#suspension-prevention">Take a look </a><i class="fa fa-angle-double-right"></i>
           </div>
         </div>
-              <div class="col-r">
-          <div class="service"> 
-            <div class="b-blue serv-block">
-              <i class="fa fa-home"></i>
-              <h3>Management services</h3>
-            </div>        
-            <p>Over 200 suspended seller accounts reinstated by our PoA experts so far. Amazon but which will also ensure that you are among the best rated sellers in your category. lexible pricing- Fixed and variable both options available</p>
-            <a href="service.php#listing-cataloguing">Take a look </a><i class="fa fa-angle-double-right"></i>
-          </div>
-        </div>
+              
         <div class="clearfix"></div>
       </div>
 
@@ -179,7 +185,7 @@
 <!-- Services Ends -->
 
 <!-- Testimonial starts -->
-
+<!-- 
 <div class="testimonial">
   <div class="row">
     <div class="col-md-6">
@@ -196,13 +202,13 @@
     </div>
   </div>
 </div>
-
+ -->
 <!-- Testimonial ends -->
 
-  <div class="border"></div>
+  <!-- <div class="border"></div> -->
 
 <!-- Product & links starts -->
-
+<!-- 
   <div class="prod">
     <div class="row">
       <div class="col-md-4">
@@ -243,7 +249,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 <!-- Product & links ends --> 
 

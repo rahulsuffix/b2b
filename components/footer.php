@@ -11,7 +11,7 @@
 </div>
 
 <!-- Footer -->
-<footer>
+<!-- <footer>
   <div class="container">
     <div class="row">
       <div class="widgets">
@@ -80,7 +80,7 @@
     </div>
   <div class="clearfix"></div>
   </div>
-</footer> 
+</footer>  -->
     
     <!-- Javascript files -->
     <!-- jQuery -->

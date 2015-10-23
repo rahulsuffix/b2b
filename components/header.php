@@ -37,14 +37,16 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-6 col-sm-12">
         <div class="logo">
           <h1><a href="#">Bridge 2 Business!</a></h1>
           <div class="hmeta">business prospective</div>
         </div>
       </div>
-      <div class="col-md-6  col-sm-6 ">
-        
+      <div class="col-md-6  col-sm-12 text-right ">
+      <h1 class="hidden-sm hidden-xs">&nbsp;</h1>
+        <p>Call Us: +918039591919</p>
+        <p>Support Hours: 10am to 7pm</p>
            <!--  <form class="form-inline" role="form">
               <div class="form-group">
                 <input type="text" class="form-control" id="search" placeholder="Type Something...">
@@ -88,9 +90,27 @@
                          </ul>
                       </li>      -->              
                      
-                      <li <?php echo ($is_active == 'service')? 'class="active"' :'' ?>><a href="service.php">Service</a></li>
-                      <li <?php echo ($is_active == 'about')? 'class="active"' :'' ?>><a href="#">About Us</a></li>
-                      <li <?php echo ($is_active == 'contact')? 'class="active"' :'' ?>><a href="contact.php">Contact</a></li>
+                    <li <?php echo ($is_active == 'service')? 'class="active dropdown"' :'class="dropdown"' ?>>
+                        <a href="service.php" class="dropdown-toggle" data-toggle="dropdown">Service <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="service.php#account-reactivation">Account Reactivation</a>
+                                <a href="service.php#suspension-prevention">Suspension Prevention</a>
+                                <a href="service.php#listing-cataloguing">Listing Cataloguing</a>
+                                <a href="service.php#launch">Launch</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li <?php echo ($is_active == 'product')? 'class="active"' :'' ?>><a href="#">Product</a></li>
+                    <li <?php echo ($is_active == 'seller_testimonial')? 'class="active"' :'' ?>><a href="#">Seller Testimonial</a></li>
+                    <li <?php echo ($is_active == 'about')? 'class="active dropdown"' :'class="dropdown"' ?>>
+                        <a href="aboutus.php" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aboutus.php#our-vision">Our Vision</a></li>
+                            <li><a href="aboutus.php#our-team">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <li <?php echo ($is_active == 'contact')? 'class="active"' :'' ?>><a href="contact.php">Contact Us</a></li>
                     </ul>
                   </nav>
                  </div>
