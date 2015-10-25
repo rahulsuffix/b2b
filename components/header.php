@@ -39,8 +39,12 @@
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="logo">
-          <h1><a href="#">Bridge 2 Business!</a></h1>
-          <div class="hmeta">business prospective</div>
+        <h1>
+            <a href="#">
+                <img src="public/images/logo.jpg" alt="">      
+            </a>
+        </h1>
+          <!-- <div class="hmeta">business prospective</div> -->
         </div>
       </div>
       <div class="col-md-6  col-sm-12 text-right ">
@@ -101,7 +105,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li <?php echo ($is_active == 'product')? 'class="active"' :'' ?>><a href="#">Product</a></li>
+                    <!-- <li <?php echo ($is_active == 'product')? 'class="active"' :'' ?>><a href="#">Product</a></li> -->
                     <li <?php echo ($is_active == 'seller_testimonial')? 'class="active"' :'' ?>><a href="#">Seller Testimonial</a></li>
                     <li <?php echo ($is_active == 'about')? 'class="active dropdown"' :'class="dropdown"' ?>>
                         <a href="aboutus.php" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
