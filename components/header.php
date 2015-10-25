@@ -49,7 +49,7 @@
       </div>
       <div class="col-md-6  col-sm-12 text-right ">
       <h1 class="hidden-sm hidden-xs">&nbsp;</h1>
-        <p>Call Us: +918039591919</p>
+        <p>Call Us: +919036705574</p>
         <p>Support Hours: 10am to 7pm</p>
            <!--  <form class="form-inline" role="form">
               <div class="form-group">
